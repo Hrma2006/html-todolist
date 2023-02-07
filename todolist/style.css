@@ -9,7 +9,7 @@
 }
 *{
     box-sizing: border-box;
-    margin: o;
+    margin: 1 auto;
     font-family:'Fira sans',sans-serif ;
 }
 body {
@@ -36,6 +36,7 @@ header h1{
 }
 #new-task-form{
     display: flex;
+    pos
 }
 input, button{
     appearance: none;
@@ -53,6 +54,7 @@ input, button{
     font-size: 1.25rem;
 }
 #new-task-submit{
+    
     color: var(--pink);
     font-size: 1.25rem;
     font-weight: 700;
@@ -70,4 +72,10 @@ input, button{
 #new-task-submit::active {
     opacity: 0.6;
 }
-main
+main{
+    flex:1 1 0%;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
