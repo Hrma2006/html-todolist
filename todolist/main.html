@@ -1,14 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="ltr" lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>task list</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-   
+    <header>
+        <h1>لائحة المهام</h1>
+        <form id="new-task-form">
+            <input 
+                type="text"
+                id="new-task-input"
+                placeholder="ما هي مهامك اليوم؟"/>
+            <input 
+                type="submit"
+                id="new-task-submit"
+                value="اضف مهمة"/>
+        </form>
+    </header>
+    <main>
+        <section class="task-list">
+            <h2>المهام</h2>
+            <div class="task">
+                <div class="content">
+                    <input 
+                        type="text"
+                        class="text"
+                        value="مهمتي١"
+                        readonly
+                    />  
+                </div>
+                <div class="actions">
+                       <button class="edit">تعديل</button> 
+                       <button class="delete">حذف</button>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="index.js"></script>
 </body>
 </html>
