@@ -11,6 +11,8 @@
     box-sizing: border-box;
     margin: 1 auto;
     font-family:'Fira sans',sans-serif ;
+    
+    
 }
 body {
     display: flex ;
@@ -27,11 +29,12 @@ header{
     margin: 0 auto;
 }
 header h1{
+    margin-right: 1rem;
     font-size: 2.5rem;
     font-weight: 300;
     color: var(--gray);
     margin-bottom: 1rem;
-    margin-left: 60%;
+   
     
 }
 #new-task-form{
@@ -74,8 +77,8 @@ input, button{
 }
 main{
     flex:1 1 0%;
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
     max-width: 800px;
     width: 100%;
-    margin: 0 auto;
+    margin-right: 0 auto;
 }
