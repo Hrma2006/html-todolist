@@ -5,8 +5,11 @@
     --gray:#6B7280;
     --light:#EEE;
     --pink:#dd72b2;
-    --puple:#9d44d0;
+    --puple:#ad66d6;
     --darkerpurple:#7c2dbd;
+    --darkestpurple:#1d0034;
+    --yellow:yellow;
+    --bgblue:#2585c0;
 }
 
 @keyframes backwards-gradient{
@@ -30,7 +33,13 @@ body {
     display: flex ;
     flex-direction: column;
     min-height: 100vh;
-    background: var(--dark);
+    background: linear-gradient(
+        to left ,
+        
+       var(--darkerpurple),
+       var(--puple),
+       var(--bgblue)
+    );
     color: white;
     margin-left: 30%;
 }
@@ -43,10 +52,23 @@ header{
 }
 
 header h1{
+    
     margin-right: 1rem;
     font-size: 2.5rem;
     font-weight: 300;
-    color: var(--gray);
+    background: linear-gradient(
+        to left ,
+        var(--puple),
+        var(--puple),
+        var(--darkestpurple),
+        var(--darkestpurple)
+        /*var(--puple),
+        var(--darkerpurple),
+        var(--pink)*/
+    );
+    background-size: 200%;
+    -webkit-background-clip:text ;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 1rem;
    
     
@@ -80,10 +102,12 @@ input, button{
     font-weight: 700;
     background: linear-gradient(
         to left ,
-        var(--pink),
-        var(--puple),
+        var(--bgblue),
+        var(--light),
+        var(--bgblue)
+        /*var(--puple),
         var(--darkerpurple),
-        var(--pink)
+        var(--pink)*/
     );
     background-size: 200%;
     -webkit-background-clip:text ;
@@ -119,7 +143,19 @@ main{
     margin-right: 1rem;
     font-size: 2.5rem;
     font-weight: 300;
-    color: var(--gray);
+    background: linear-gradient(
+        to left ,
+        var(--puple),
+        var(--puple),
+        var(--darkestpurple),
+        var(--darkestpurple)
+        /*var(--puple),
+        var(--darkerpurple),
+        var(--pink)*/
+    );
+    background-size: 200%;
+    -webkit-background-clip:text ;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 1rem;
 
 }
