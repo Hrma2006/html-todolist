@@ -4,9 +4,9 @@
     --darkest:#111827;
     --gray:#6B7280;
     --light:#EEE;
-    --pink:#EC4899;
-    --puple:#8B5Cf6;
-    --darkerpurple:#34167b;
+    --pink:#B298DC;
+    --puple:#A663CC;
+    --darkerpurple:#6F2DBD;
 }
 @keyframes backwards-gradient{
     from{
@@ -74,7 +74,8 @@ input, button{
         to left ,
         var(--pink),
         var(--puple),
-        var(--darkerpurple)
+        var(--darkerpurple),
+        var(--pink)
         
     );
     background-size: 200%;
