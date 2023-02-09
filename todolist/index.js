@@ -24,8 +24,13 @@ window.addEventListener('load', ()=>{
         task_input_el.type="text"
         task_input_el.value=task
         task_input_el.setAttribute("readOnly", "readOnly")
+        task_input_el.addEventListener('click',()=>{
+            task_input_el.setAttribute("style", "opacity :0.1;")
+        })
+        
 
         task_content_el.appendChild(task_input_el)
+        
 
         const task_action_el = document.createElement("div")
         task_action_el.classList.add("actions")

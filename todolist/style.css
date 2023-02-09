@@ -138,6 +138,10 @@ main{
 #tasks .task .content{
     flex: 1 1 0%;
 }
+#tasks .task .content input:hover{
+    cursor: pointer;
+}
+
 
 #tasks .task .content .text{
     color: var(--light);
