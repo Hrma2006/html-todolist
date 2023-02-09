@@ -155,6 +155,7 @@ main{
     color: var(--pink);
 }
 
+
 #tasks .task .actions {
     display: flex;
     margin:0 -.5rem;
