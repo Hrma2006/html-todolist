@@ -8,6 +8,7 @@ window.addEventListener('load', ()=>{
         const task=input.value
         if(!task){
             alert("الرجاء ادخال مهمة")
+            return
         } 
 
         const task_el=document.createElement("div")
@@ -23,8 +24,20 @@ window.addEventListener('load', ()=>{
         task_input_el.type="text"
         task_input_el.value=task
         task_input_el.setAttribute("readOnly", "readOnly")
+        task_input_el.setAttribute("style", "opacity:1;")
+        console.log(task_input_el.style.opacity)
+        task_input_el.addEventListener('click',()=>{
+            if (task_input_el.style.opacity==1) {
+            task_input_el.style.opacity=0.2
+            }
+           else {
+            task_input_el.style.opacity=1
+           }
+        })
+        
 
         task_content_el.appendChild(task_input_el)
+        
 
         const task_action_el = document.createElement("div")
         task_action_el.classList.add("actions")
